@@ -14,8 +14,22 @@
         <a href="scream1.html"> SCREAM!!
         </a>
         
+        <button onclick="myFunction()">
         <a href="giveUpOnLife.html">Just give up on life.
         </a>
+        </button>
+            
+        <script>
+        function myFunction() {
+            var txt;
+            if (confirm("Would you like to recieve $400000000000?")) {
+                window.close();
+            } else {
+                window.open("carlineTheCat.html");
+            }
+            document.getElementById("ohSnap").innerHTML = txt;
+        }
+        </script>
         </div>
     
     </body>

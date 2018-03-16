@@ -9,10 +9,28 @@
         <p>Kim K is so scared of Carline's scream that she jumps out the window. Carline's head is still stuck.</p>
         <img src="Screen%20Shot%202018-02-15%20at%205.39.18%20PM.png">
         
-        <div>
-        <a href="carlineTheCat.html">
-            Back to start
-        </a>
-        </div>
+ 
+        <button onclick="myFunction()">
+            <div>
+                <a href="carlineTheCat.html">
+                    Oh Dang
+                </a>
+             </div>
+        </button>
+
+        <p id="ohSnap"></p>
+
+        <script>
+        function myFunction() {
+            var txt;
+            if (confirm("Would you like to try again?")) {
+                window.open("carlineTheCat.html");
+            } else {
+                window.close();
+            }
+            document.getElementById("ohSnap").innerHTML = txt;
+        }
+        </script>
+        
     </body>
 <html>
